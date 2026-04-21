@@ -1,4 +1,4 @@
-# KU Leuven — Human Brain Imaging practical classes (2026)
+# KUL Human Brain Imaging practical classes (2026)
 
 This repository hosts the Jupyter notebooks for the **Human Brain Imaging** practical classes at KU Leuven (2026 edition).
 
