@@ -16,29 +16,27 @@ The notebooks are designed to run on [**Neurodesk**](https://www.neurodesk.org/)
 
 Once you are on the Neurodesk desktop:
 
-1. Open a **terminal** and clone this repository into your home folder:
+1. Launch **VS Code** from inside the Neurodesk instance (it is available from the application menu / taskbar on the desktop).
+
+2. Open a **terminal inside VS Code**: from the top menu, go to **Terminal → New Terminal** (or press `` Ctrl+` ``). A terminal panel will appear at the bottom of the VS Code window.
+
+3. In that terminal, clone this repository into your home folder:
 
    ```bash
    cd ~
    git clone https://github.com/costantinoai/kul-hbi-workshop.git
    ```
 
-2. Launch **VS Code** from inside the Neurodesk instance (it is available from the application menu / taskbar on the desktop).
+4. Still in VS Code, go to **File → Open Folder…** and select the cloned repository folder (`~/kul-hbi-workshop`).
 
-3. In VS Code, go to **File → Open Folder…** and select the cloned repository folder (`~/kul-hbi-workshop`).
-
-4. You are ready to go. Open `sess-1a.ipynb` to start the first session, then move on to `sess-1b.ipynb`, and so on.
+5. You are ready to go. Open `sess-1a.ipynb` to start the first session, then move on to `sess-1b.ipynb`, and so on.
 
 ## Course data
 
 The course datasets (raw BIDS data, templates, atlases, and pre-computed derivatives such as MRIQC and fMRIPrep outputs) are pre-staged on the Neurodesk Europe server under:
 
 ```
-/data/teaching/costantinoai/
+/data/teaching/costantinoai/sess-xx
 ```
 
 The notebooks reference this path directly, so everything will "just work" as long as you are on the Europe Neurodesk server. Outputs you generate during the practicals are written to `results/` inside the cloned repository.
-
-## Running outside Neurodesk
-
-If you want to run the notebooks on your own machine, you are on your own for the setup: install the required software stack (MRIcron, dcm2niix, BIDScoin, MRIQC, fMRIPrep, and the Python dependencies used in the notebooks) and download the datasets referenced under `/data/teaching/costantinoai/`. We recommend sticking with Neurodesk during class.
