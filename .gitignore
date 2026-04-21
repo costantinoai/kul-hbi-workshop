@@ -1,4 +1,4 @@
 .claude
 .ipynb_checkpoints
+local/
 results
-sess-1b.ipynb
