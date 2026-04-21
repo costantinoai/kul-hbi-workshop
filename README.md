@@ -10,15 +10,19 @@ The notebooks are designed to run on [**Neurodesk**](https://www.neurodesk.org/)
 2. Click **"Try Neurodesk in your browser"**.
 3. Choose the **Europe** server.
 4. Pick the **Medium** configuration (**8 CPU cores**).
-5. Wait for the Neurodesk instance to start — you will land on a Linux desktop running in your browser.
+5. Wait for the Neurodesk instance to start — you will land on a JupyterHub instance running in your browser.
 
 ## Setting up the repository inside Neurodesk
 
 Once you are on the Neurodesk desktop:
 
-1. Launch **VS Code** from inside the Neurodesk instance (it is available from the application menu / taskbar on the desktop).
+1. Launch **VS Code** from inside the Neurodesk instance (it is available from the Launcher). 
+
+![VS Code in Launcher](assets/sess-1a/figures/launcher-vscode.png)
 
 2. Open a **terminal inside VS Code**: from the top menu, go to **Terminal → New Terminal** (or press `` Ctrl+` ``). A terminal panel will appear at the bottom of the VS Code window.
+
+![VS Code Terminal](assets/sess-1a/figures/vscode-open-terminal.png)
 
 3. In that terminal, clone this repository into your home folder:
 
@@ -28,6 +32,8 @@ Once you are on the Neurodesk desktop:
    ```
 
 4. Still in VS Code, go to **File → Open Folder…** and select the cloned repository folder (`~/kul-hbi-workshop`).
+
+![VS Code open folder](assets/sess-1a/figures/vscode-open-folder.png)
 
 5. You are ready to go. Open `sess-1a.ipynb` to start the first session, then move on to `sess-1b.ipynb`, and so on.
 
