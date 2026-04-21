@@ -1,0 +1,44 @@
+# KU Leuven — Human Brain Imaging practical classes (2026)
+
+This repository hosts the Jupyter notebooks for the **Human Brain Imaging** practical classes at KU Leuven (2026 edition).
+
+The notebooks are designed to run on [**Neurodesk**](https://www.neurodesk.org/), which provides all the neuroimaging software (MRIcron, dcm2niix, BIDScoin, MRIQC, fMRIPrep, nilearn, nibabel, …) pre-installed along with the shared course datasets. You can also run them outside Neurodesk, but in that case you will need to install the required software yourself and download the datasets manually — we do not support that path during class.
+
+## Getting started with Neurodesk
+
+1. Go to [play.neurodesk.org](https://play.neurodesk.org/).
+2. Click **"Try Neurodesk in your browser"**.
+3. Choose the **Europe** server.
+4. Pick the **Medium** configuration (**8 CPU cores**).
+5. Wait for the Neurodesk instance to start — you will land on a Linux desktop running in your browser.
+
+## Setting up the repository inside Neurodesk
+
+Once you are on the Neurodesk desktop:
+
+1. Open a **terminal** and clone this repository into your home folder:
+
+   ```bash
+   cd ~
+   git clone https://github.com/costantinoai/kul-hbi-workshop.git
+   ```
+
+2. Launch **VS Code** from inside the Neurodesk instance (it is available from the application menu / taskbar on the desktop).
+
+3. In VS Code, go to **File → Open Folder…** and select the cloned repository folder (`~/kul-hbi-workshop`).
+
+4. You are ready to go. Open `sess-1a.ipynb` to start the first session, then move on to `sess-1b.ipynb`, and so on.
+
+## Course data
+
+The course datasets (raw BIDS data, templates, atlases, and pre-computed derivatives such as MRIQC and fMRIPrep outputs) are pre-staged on the Neurodesk Europe server under:
+
+```
+/data/teaching/costantinoai/
+```
+
+The notebooks reference this path directly, so everything will "just work" as long as you are on the Europe Neurodesk server. Outputs you generate during the practicals are written to `results/` inside the cloned repository.
+
+## Running outside Neurodesk
+
+If you want to run the notebooks on your own machine, you are on your own for the setup: install the required software stack (MRIcron, dcm2niix, BIDScoin, MRIQC, fMRIPrep, and the Python dependencies used in the notebooks) and download the datasets referenced under `/data/teaching/costantinoai/`. We recommend sticking with Neurodesk during class.
